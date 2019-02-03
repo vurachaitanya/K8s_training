@@ -7,3 +7,11 @@ palmetto training center
 - https://www.devopsschool.com/pdf/docker/
 - https://www.devopsschool.com/slides/docker/
 - https://www.devopsschool.com/slides/kubernetes/getting-started-kubernetes/#/22
+- Docker links ---linking dockers
+- Cluster store ----k8s database etc
+- Types of container:
+    Rocket
+    Crio container
+    Cryod
+    Containerd
+
