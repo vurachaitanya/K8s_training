@@ -6,3 +6,4 @@ palmetto training center
 - https://www.devopsschool.com/tutorial/docker/
 - https://www.devopsschool.com/pdf/docker/
 - https://www.devopsschool.com/slides/docker/
+- https://www.devopsschool.com/slides/kubernetes/getting-started-kubernetes/#/22
