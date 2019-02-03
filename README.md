@@ -14,4 +14,7 @@ palmetto training center
     Crio container
     Cryod
     Containerd
+ - https://medium.com/@pmvk/tips-to-crack-certified-kubernetes-administrator-cka-exam-c949c7a9bea1
+ - Networking : https://ahmet.im/blog/kubernetes-network-policy/
+ - Certificates : https://brancz.com/2017/10/16/kubernetes-auth-x509-client-certificates/
 
