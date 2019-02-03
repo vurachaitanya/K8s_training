@@ -72,3 +72,79 @@ as root:
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 
 ````
+#Docker history commands
+````
+ sudo su -
+    2  mkdir -p $HOME/.kube
+    3  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+    4  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+    5  kubectl getnodes
+    6  kubectl get nodes
+    7  kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+    8  kubectl get nodes
+    9  kubectl get ns
+   10  kubectl
+   11  kubectl get pods --show-all
+   12  kubectl get pods --help
+   13  kubectl get pods --all-namespaces
+   14  kubectl get ds
+   15  kubectl get deployments
+   16  kubectl get rc
+   17  kubectl get ns
+   18  kubectl get pods --all-namespaces -o wide
+   19   kubectl get pods -n kube-system
+   20  kubectl describe etcd-ip-172-31-28-38.ap-south-1.compute.internal
+   21  kubectl describe etcd-ip-172-31-28-38.ap-south-1.compute.internal -n kube-system
+   22  kubectl describe pods etcd-ip-172-31-28-38.ap-south-1.compute.internal -n kube-system
+   23  kubectl describe pods etcd-ip-172-31-28-38.ap-south-1.compute.internal -n kube-system --json
+   24  kubectl describe pods etcd-ip-172-31-28-38.ap-south-1.compute.internal -n kube-system -o json
+   25  kubectl describe pods etcd-ip-172-31-28-38.ap-south-1.compute.internal -n kube-system --show-events=true
+   26  docker get secureity
+   27  kubectl get  apiservices
+   28  kubectl get  apiservices|grep metri
+   29  kubectl get  apiservices|grep metrics
+   30  kubectl create ns chaitu_ns
+   31  kubectl create namespace chaitu-ns
+   32  pods/resource/memory-request-limit.yaml
+   33  apiVersion: v1
+   34  kind: Pod
+   35  metadata:
+   36    name: memory-demo
+   37    namespace: mem-example
+   38  spec:
+   39    containers:
+   40    - name: memory-demo-ctr
+   41      image: polinux/stress
+   42      resources:
+   43        limits:
+   44          memory: "200Mi"
+   45        requests:
+   46          memory: "100Mi"
+   47      command: ["stress"]
+   48      args: ["--vm", "1", "--vm-bytes", "150M", "--vm-hang", "1"]
+   49  vi memory_request_limits.yaml
+   50  kubectl create pod -f memory_request_limits.yaml -n chaitu-ns
+   51  kubectl create -h
+   52  kubectl create -f memory_request_limits.yaml -n chaitu-ns
+   53  kubectl get pods -n chaitu-ns
+   54  kubectl describe chaitu-ns -n chaitu-ns
+   55  kubectl describe pod chaitu-ns -n chaitu-ns
+   56  kubctl status
+   57  kubectl
+   58  kubectl  top
+   59  kubectl  top pods
+   60  kubectl  top pods -n chaitu-ns
+   61  kubectl  top nodes
+   62  kubectl  top node
+   63  kubectl top pods chaitu-ns
+   64  kubctl get services heapster
+   65  kubectl get services heapster
+   66  kubectl get services http:heapster
+   67  kubectl get services
+   68  kubectl describe pod chaitu-ns --output=yaml -n chaitu-ns
+   69  kubectl get  pod chaitu-ns --output=yaml -n chaitu-ns
+   70  kubectl top pod chaitu-ns --namespace=chaitu-ns
+   71  kubectl get pods -n kube-system
+   72  kubectl get pods --all-namespaces
+   73  kubectl top node --heapster-namespace='default
+````
