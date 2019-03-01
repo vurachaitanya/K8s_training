@@ -35,4 +35,5 @@ as root:
 
   kubeadm join 10.0.2.15:6443 --token xxxxxxxxxxxxxxxx --discovery-token-ca-cert-hash sha256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
-
+- curl https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/canal/canal.yaml -O
+- kubectl apply -f canal.yaml
