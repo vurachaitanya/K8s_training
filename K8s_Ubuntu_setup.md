@@ -1,4 +1,4 @@
-#
+# Installing K8s on Ubuntu 18.x
 
 - apt-get update && apt-get install -y apt-transport-https
 - curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -8,16 +8,12 @@
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 
 EOF
-
-- cat </etc/apt/sources.list.d/kubernetes.list
-
-deb http://apt.kubernetes.io/ kubernetes-xenial main
-
-EOF
+- swapoff -a
 
 - apt-get update
 - apt-get install -y docker.io kubeadm kubectl kubelet kubernetes-cni
-- apt-get install -y docker.io kubeadm kubectl kubelet kubernetes-cni
+- systemctl enable docker
+- systemctl start docker
 - kubeadm init                                          
 
 Your Kubernetes master has initialized successfully!
