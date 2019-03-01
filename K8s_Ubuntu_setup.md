@@ -14,3 +14,12 @@ EOF
 - apt-get update
 - apt-get install -y docker.io kubeadm kubectl kubelet kubernetes-cni
 - apt-get install -y docker.io kubeadm kubectl kubelet kubernetes-cni
+- kubeadm init                                          
+
+Your Kubernetes master has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+- mkdir -p $HOME/.kube
+-  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+-  sudo chown $(id -u):$(id -g) $HOME/.kube/config
