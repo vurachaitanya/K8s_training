@@ -39,3 +39,4 @@ as root:
 https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml
 - Configure calico on cluster : kubectl apply -f \
 https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calico.yaml
+- Command to make Master to accept namespaces  : kubectl taint nodes --all node-role.kubernetes.io/master-
