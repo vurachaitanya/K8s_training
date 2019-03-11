@@ -35,5 +35,7 @@ as root:
 
   kubeadm join 10.0.2.15:6443 --token xxxxxxxxxxxxxxxx --discovery-token-ca-cert-hash sha256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
-- kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
-
+- Configure ETCD: kubectl apply -f \
+https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml
+- Configure calico on cluster : kubectl apply -f \
+https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calico.yaml
