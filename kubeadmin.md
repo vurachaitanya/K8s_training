@@ -1,5 +1,7 @@
 # Kubeinit output :
 ````
+kubeadm init --pod-network-cidr=192.168.0.0/16
+          OR
 root@k8smaster:~# kubeadm init
 [init] Using Kubernetes version: v1.13.4
 [preflight] Running pre-flight checks
